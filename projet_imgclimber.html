@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Portfolio - Delobel Léo</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free Website Template" name="keywords">
+        <meta content="Free Website Template" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body data-spy="scroll" data-target=".navbar" data-offset="51">
+        <!-- Nav Bar Start -->
+        <div class="navbar navbar-expand-lg bg-light navbar-light">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">Accueil</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="#home" class="nav-item nav-link active">AeRGO</a>
+                        <a href="#description" class="nav-item nav-link">Description</a>
+                        <a href="#utilisations" class="nav-item nav-link">Utilisation.s</a>
+                        <a href="#fonctionnement" class="nav-item nav-link">Fonctionnement</a>
+                        <a href="#apprentissage" class="nav-item nav-link">Apprentissage</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+
+        <!-- Hero Start -->
+        <div class="hero" id="home">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="hero-content">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 d-none d-md-block">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+        <!-- Portfolio Start -->
+        <div class="portfolio" id="portfolio">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>Projets</p>
+                    <h2>ImgClimber</h2>
+                    <h3>Traitement numérique d'image</h3>
+                </div>
+                <div class="about-text">
+                  <div class="projet_img" style="float:left; width: 30%">
+                    <img src="img/hillclimber_2.png" alt="Image" style="width: 100%;">
+                  </div>
+                    <p>
+                      ImgClimber est un algorithme d'approximation d'images.
+                      Il est capable de redessiner une image donnée en format jpg, png, gif, et d'autres.
+                    </p>
+                    <br><br><br><br><br><br>
+
+                    <hr>
+
+                    <h3 id="description">Description</h3>
+                    <p>
+                      ImgClimber est un projet qui m'est venu en tête après avoir vu cette vidéo sur Youtube:
+                    </p>
+                    <iframe width="40%" src="https://www.youtube.com/embed/6PQ34gZw6Nk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>
+                      Je me suis alors penché sur l'algorithme de Hill-Climbing, et cela m'a fasciné qu'on pouvait créer de tels résultats
+                      à partir de quelques règles très simples.
+                    </p>
+
+                    <hr>
+
+                    <h3 id="fonctionnement">Fonctionnement</h3>
+
+                    <p>
+                      Le procédé d'ImgClimber est le suivant :
+                      <ul style="list-style: inside square;"><i>
+                        <li>1. On charge l'image modèle</li>
+                        <li>2. On génère une surface blanche sur laquelle expérimenter</li>
+                        <li>3. On génère un rectangle aléatoire</li>
+                        <li>4. On fait "muter" ce rectangle aléatoirement</li>
+                        <li>5. On calcule la ressemblance entre la source et l'image produite (Autrement appelé "Fitness")</li>
+                        <li>6. Si le fitness est meilleur, on garde les modifications</li>
+                        <li>7. On répète la mutation du rectangle jusqu'à satisfaction</li>
+                        <li>8. On génère un autre rectangle, et la boucle se répète</li>
+                      </ul></i>
+                      ImgClimber n'"apprend" pas vraiment : il essaie aléatoirement et continue sa marche si son score s'améliore.
+                      En réalité, il n'a aucune idée de ce qu'il dessine.
+                    </p>
+                    <p>
+                      Le code est relativement optimisé, même si je compte intégrer du multi-threading pour l'accélerer.
+                      Pour l'instant, les résultats sont impressionnants après seulement une dizaine de minutes.
+                    </p>
+                    <p>
+                      Le plus gros bug que j'ai rencontré était l'apparition d'artefacts :
+                    </p>
+                    <div class="projet_img">
+                      <img src="img/imgclimber/chuck.jpg" alt="Image" style="width: 20%;">
+                      <img src="img/imgclimber/artefacts.png" alt="Image" style="width: 20%;">
+                      <p style="font-size: 12px"><i>Artefacts multicolores (Lignes rouges, roses...)</i></p>
+                    </div>
+                    <p>
+                      Après avoir imposé une taille minimale pour les rectangles,
+                      le problème fut résolu malgré une perte du niveau de détails :
+                    </p>
+                    <div class="projet_img">
+                      <img src="img/imgclimber/chuck.jpg" alt="Image" style="width: 20%;">
+                      <img src="img/imgclimber/chuck_2.png" alt="Image" style="width: 20%;">
+                      <p style="font-size: 12px"><i>Plus d'artéfacts, ni de détail...</i></p>
+                    </div>
+                    <p>
+                      Heureusement, après modification de quelques variables (Notamment la demande de calcul par rectangle),
+                      j'ai trouvé un compromis donnant de bons résultats :
+                    </p>
+
+                    <div class="projet_img">
+                      <img src="img/imgclimber/resultats.png" alt="Image" style="width: 100%;">
+                      <p style="font-size: 12px"><i>Résultats après environ 10 à 15 minutes de calcul.</i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio End -->
+
+        <!-- Footer Start -->
+        <div class="footer wow fadeIn" data-wow-delay="0.3s">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="footer-info">
+                        <h2>Delobel Léo</h2>
+                        <h3>Rue Montgolfier, Annonay 07100</h3>
+                        <div class="footer-menu">
+                            <p>+336 52 26 84 75</p>
+                            <p>delobel.leo2@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container copyright">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to top button -->
+        <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+
+        <!-- Pre Loader -->
+        <div id="loader" class="show">
+            <div class="loader"></div>
+        </div>
+
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/typed/typed.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>

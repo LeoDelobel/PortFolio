@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Portfolio - Delobel Léo</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free Website Template" name="keywords">
+        <meta content="Free Website Template" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body data-spy="scroll" data-target=".navbar" data-offset="51">
+        <!-- Nav Bar Start -->
+        <div class="navbar navbar-expand-lg bg-light navbar-light">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">Accueil</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="#home" class="nav-item nav-link active">AeRGO</a>
+                        <a href="#description" class="nav-item nav-link">Description</a>
+                        <a href="#utilisations" class="nav-item nav-link">Utilisation.s</a>
+                        <a href="#fonctionnement" class="nav-item nav-link">Fonctionnement</a>
+                        <a href="#apprentissage" class="nav-item nav-link">Apprentissage</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+
+        <!-- Hero Start -->
+        <div class="hero" id="home">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="hero-content">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 d-none d-md-block">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+        <!-- Portfolio Start -->
+        <div class="portfolio" id="portfolio">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>Projets</p>
+                    <h2>AerGO</h2>
+                    <h3>Auto-Encodeur à Rétro-Propagation du Gradient</h3>
+                </div>
+                <div class="about-text">
+                  <div class="projet_img" style="float:left; width: 30%">
+                    <img src="img/thumbnails/aergo.png" alt="Image" style="width: 100%;">
+                  </div>
+                    <p>
+                    AeRGO est une intelligence artificielle multifonction. Parmis ses usages, nous pouvons compter :
+                    <ul style="list-style: inside square;"><i>
+                      <li>Compression de fichiers</li>
+                      <li>Décompression de fichiers</li>
+                      <li>Apprentissage de caractéristiques</li>
+                      <li>Apprentissage parmis un ensemble de données</li>
+                    </ul></i>
+                    </p>
+
+                    <div id="container">
+                        <div class="container banner-text">
+                            <a class="btn" href="doc/aergo.pdf">Voir le PDF</a>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <h3 id="description">Description</h3>
+                    <p>
+                      En début de BTS (2019 - 2020), nous avons appris le C#. Un projet était demandé en fin d'année, et c'est ainsi que je voulais présenter AeRGO.
+                      J'avais depuis longtemps l'envie de programmer une intelligence artificielle sans aucune dépendance extérieure, et tout le projet m'a demandé 2 mois.
+                      Malheureusement, à cause du contexte sanitaire, il n'est jamais parvenu aux juges.
+                    </p>
+                    <p>
+                      Pour simplifier les calculs matriciels, j'ai programmé ma propre bibliothèque ;
+                      <br> LEM256, autrement dit <a href="projet_m.html">M-256</a>.
+                    </p>
+
+                    <hr>
+
+                    <h3 id="utilisations">Utilisations</h3>
+                    <p>
+                      J'ai programmé AeRGO avec l'objectif de le rendre facile d'utilisation tout en le concevant très efficace.
+                      Ainsi, il peut accueillir jusqu'à 255 couches d'environ 255 neurones, autrement dit 65'025 neurones !
+                    </p>
+                    <p>
+                      AeRGO est un <a href="https://fr.wikipedia.org/wiki/R%C3%A9seau_de_neurones_artificiels">réseau de neurones</a>, il s'agit ainsi d'une intelligence artificielle.
+                      Le code interne s'adapte pour satisfaire au mieux un problème qui lui est donné.
+                      Par exemple, si je lui montre que 2x2 font 4, 3x3 font 9, etc...
+                      Et que je lui demande de faire 5x5, il devra se modifier pour s'approcher de 25 qui est la bonne réponse.
+                    </p>
+                    <p>
+                      Bien évidemment, il est fait pour résoudre des problèmes bien plus compliqués, si compliqués que même l'humain ne peut pas le faire aussi efficacement.
+                      <br>Une utilisation principale d'AeRGO est d'être un Auto-Encodeur :
+                      Il apprend à compresser les fichiers de la manière la plus optimisée qu'il soit.
+                      <br>JPEG et PNG n'ont rien à voir avec sa force !
+                    </p>
+
+                    <hr>
+
+                    <h3 id="fonctionnement">Fonctionnement</h3>
+                    <p>
+                      Un <a href="https://fr.wikipedia.org/wiki/Perceptron">neurone</a> fonctionne ainsi :
+                      <ul style="list-style: inside square;">
+                        <li>Il prend une ou plusieurs entrées <b>X</b> sous forme d'une suite de chiffres.
+                        <li>Il multiplie chaque entrée par le poids <b>W</b> correspondant.
+                        <li>Il en fait la somme.
+                        <li>Il passe cette somme dans une fonction <b>T</b> (Ici, la fonction sigmoide).
+                      </ul>
+                    </p>
+                    <div class="projet_img">
+                      <img src="https://philosophy.hku.hk/joelau/media/node.gif" alt="Image" style="width: 40%;">
+                      <p style="font-size: 12px"><i>Un neurone schématisé.</i></p>
+                    </div>
+
+                    <hr>
+
+                    <p>
+                      Un <a href="https://fr.wikipedia.org/wiki/R%C3%A9seau_de_neurones_artificiels">réseau de neurones</a> est tout simplement des neurones reliés entre eux (Généralement sous forme de couche).
+                      <br>La première couche de neurones est l'entrée, la dernière couche la sortie, et les autres sont les couches dites "cachées".
+                    </p>
+
+                    <div class="projet_img">
+                      <img src="img/reseau.png" alt="Image" style="width: 40%;">
+                      <p style="font-size: 12px"><i>Un réseau de neurones. Il en existe une infinité de formes différentes.</i></p>
+                    </div>
+
+                    <hr>
+
+                    <h3 id="apprentissage">Apprentissage</h3>
+                    <p>
+                      AeRGO apprend avec la technique de la <a href="https://fr.wikipedia.org/wiki/R%C3%A9tropropagation_du_gradient">Rétro-Propagation du Gradient</a>.
+                      C'est à dire que l'erreur totale est diffusée dans tout le réseau pour modifier chaque neurone.
+                      Ainsi, lors de chaque itération d'AeRGO, son "cerveau" s'améliore.
+                    </p>
+                    <p>
+                      Pour faire apprendre un réseau de neurones, on ne modifie que les poids des neurones : rien d'autre ne change.
+                      Les données restent identiques, uniquement les multiplications s'adaptent.
+                      Par exemple, si l'on donne une donnée inutile au réseau, il va apprendre à la multiplier par 0, autrement dit l'ignorer.
+                    </p>
+                    <p>
+                      La "dureté" de l'apprentissage est gérée par un taux d'apprentissage donné.
+                      Plus il est élevé, plus le réseau apprendra vite, mais moins il sera précis.
+                    </p>
+                    <div class="projet_img">
+                      <img src="img/erreur.png" alt="Image" style="width: 60%;">
+                      <p style="font-size: 12px"><i>Performance d'AeRGO lors de 500 itérations du problème XOR (Ici, 5 taux d'apprentissage différents).</i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio End -->
+
+        <!-- Footer Start -->
+        <div class="footer wow fadeIn" data-wow-delay="0.3s">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="footer-info">
+                        <h2>Delobel Léo</h2>
+                        <h3>Rue Montgolfier, Annonay 07100</h3>
+                        <div class="footer-menu">
+                            <p>+336 52 26 84 75</p>
+                            <p>delobel.leo2@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container copyright">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to top button -->
+        <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+
+        <!-- Pre Loader -->
+        <div id="loader" class="show">
+            <div class="loader"></div>
+        </div>
+
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/typed/typed.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>

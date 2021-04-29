@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Portfolio - Delobel Léo</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free Website Template" name="keywords">
+        <meta content="Free Website Template" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body data-spy="scroll" data-target=".navbar" data-offset="51">
+        <!-- Nav Bar Start -->
+        <div class="navbar navbar-expand-lg bg-light navbar-light">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">Accueil</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="#home" class="nav-item nav-link active">LE-3D</a>
+                        <a href="#description" class="nav-item nav-link">Description</a>
+                        <a href="#fonctionnalites" class="nav-item nav-link">Fonctionnalités</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+
+        <!-- Hero Start -->
+        <div class="hero" id="home">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="hero-content">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 d-none d-md-block">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+        <!-- Portfolio Start -->
+        <div class="portfolio" id="portfolio">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>Projets</p>
+                    <h2>LE-3D</h2>
+                    <h3>Moteur de projection 3D</h3>
+                </div>
+                <div class="about-text">
+                  <div class="projet_img" style="float:left; width: 30%">
+                    <img src="img/thumbnails/leed.png" alt="Image" style="width: 100%; padding-right: 10px">
+                  </div>
+                    <p>
+                      LE-3D est un moteur de projection 3D utilisant la méthode WEAK.
+                    <ul style="list-style: inside square;"><i>
+                      <li>Affichage d'objets 3D a partir de simples points</li>
+                      <li>Gestion de l'éclairage est des couleurs</li>
+                      <li>Importation de fichiers .obj (Blender, etc...)</li>
+                    </ul></i>
+                    </p>
+
+                    <hr>
+
+                    <h3 id="description">Description</h3>
+                    <p>
+                      Les moteurs 3D en tout genre m'ont toujours fascinés.
+                      Lors des vacances d'été 2020, il m'est venu à l'esprit de faire mon propre moteur
+                      sans aucune connaissance ni dépendance extérieure.
+                      Apprendre la méthode WEAK, son fonctionnement, et l'intégrer à mon code n'a pas été facile,
+                      mais je suis fier du résultat final.
+                    </p>
+
+                    <hr>
+
+                    <h3 id="fonctionnalites">Fonctionnalités</h3>
+                    <p>
+                      LE-3D peut générer des objets à partir de points 3D, et l'afficher à l'écran.
+                      Pour faciliter la tâche, il est possible de modéliser sur Blender et
+                      d'importer notre travail.
+                    </p>
+                    <div class="projet_img">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Axonometric_projection.svg/150px-Axonometric_projection.svg.png" alt="Image" style="width: 40%;">
+                      <p style="font-size: 12px"><i>Une projection, ou comment passer d'un objet 3D à un écran 2D.</i></p>
+                    </div>
+                    <p>
+                      Les premiers prototypes ont été prometteurs très vite,
+                      même si la performance laisse à désirer pour de gros modèles (Terrain, grand nombre de polygones, etc..)
+                    </p>
+                    <div class="projet_img">
+                      <img src="img/weak3.png" alt="Image" style="width: 70%;">
+                      <p style="font-size: 12px"><i>Première version de LE-3D : une moitié de cube.</i></p>
+                    </div>
+                    <p>
+                      Le moteur utilise des triangles pour calculer la lumière, la perspective, etc..
+                      Ainsi, contrairement à un moteur pour polygones carrés, les fichiers importés sont plus gros.
+                    </p>
+                    <div class="projet_img">
+                      <img src="img/leed1.png" alt="Image" style="width: 70%;">
+                      <p style="font-size: 12px"><i>Une Suzanne verte, le singe de Blender (En mode Debug). On peut apercevoir les ombres et la lumière.</i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio End -->
+
+        <!-- Footer Start -->
+        <div class="footer wow fadeIn" data-wow-delay="0.3s">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="footer-info">
+                        <h2>Delobel Léo</h2>
+                        <h3>Rue Montgolfier, Annonay 07100</h3>
+                        <div class="footer-menu">
+                            <p>+336 52 26 84 75</p>
+                            <p>delobel.leo2@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container copyright">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to top button -->
+        <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+
+        <!-- Pre Loader -->
+        <div id="loader" class="show">
+            <div class="loader"></div>
+        </div>
+
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/typed/typed.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
